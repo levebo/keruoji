@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html;charset=utf-8"/>
+    <link rel="shortcut icon" href="#"/>
+    <link rel="stylesheet" type="text/css" href="{{pluResPath}}html/pcrCards/pcrCards.css"/>
+    <link rel="preload" href="{{resPath}}font/tttgbnumber.ttf" as="font">
+    <link rel="preload" href="{{pluResPath}}img/pcr/cards/{{ type == 1 ? bgOne : bg }}" as="image">
+</head>
+<body>
+<div class="container" style="background-image: url('{{pluResPath}}img/pcr/cards/{{ type == 1 ? bgOne : bg }}')"
+     id="container">
+    {{if type == 1}}
+    <div class="list-box-one">
+        {{each list}}
+        <div class="item-one">
+            <img class="item-img-one" style="{{$value.star == 3 ? 'zoom: 1.05;' : ''}}"
+                 src="{{pluResPath}}img/pcr/cards/{{$value.star == 1 ? '1.png' : $value.star == 2 ? '10.png' : '50.png'}}"/>
+        </div>
+        {{/each}}
+    </div>
+    {{/if}}
+    {{if type == 2}}
+    <div class="list-box">
+        {{each list}}
+        <div class="item">
+            <img class="item-img" src="{{pluResPath}}img/pcr/hero/{{$value.id}}.png"/>
+        </div>
+        {{/each}}
+    </div>
+    {{/if}}
+</div>
+</body>
+</html>
+

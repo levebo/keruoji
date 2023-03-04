@@ -1,0 +1,9 @@
+# 以图搜图接口
+saucenao:
+  url: https://saucenao.com/search.php
+  apiKey: 85556dcf8d51f451b4d033a241dc1dc689c4459e
+# 搜图接口
+yandere:
+  url: https://konachan.net/post.json
+lolicon:
+  url: https://api.lolicon.app/setu/v2

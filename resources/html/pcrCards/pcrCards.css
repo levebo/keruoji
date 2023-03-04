@@ -1,0 +1,72 @@
+@font-face {
+    font-family: 'tttgbnumber';
+    src: url("../../../../../resources/font/tttgbnumber.ttf");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "YS";
+    src: url("../../../../../resources/font/HYWenHei-55W.ttf");
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    user-select: none;
+}
+
+body {
+    transform: scale(0.8);
+    transform-origin: 0 0;
+    position: absolute;
+}
+
+.container {
+    width: 1920px;
+    height: 1080px;
+    background-size: 100% 100%;
+    overflow: hidden;
+}
+
+.list-box-one {
+    display: flex;
+    margin: 40px 50px;
+    width: 1920px;
+    flex-wrap: wrap;
+}
+
+.list-box-one .item-one {
+    position: relative;
+    width: 360px;
+    height: 475px;
+    margin: 10px 0;
+}
+
+.list-box-one .item .item-img-one {
+    width: 360px;
+    height: 475px;
+}
+
+.list-box {
+    display: flex;
+    margin: 195px 300px;
+    width: 1400px;
+    flex-wrap: wrap;
+}
+
+.list-box .item {
+    position: relative;
+    width: 128px;
+    height: 128px;
+    margin: 20px 22px;
+    zoom: 1.5;
+}
+
+.list-box .item .item-img {
+    width: 128px;
+    height: 128px;
+}

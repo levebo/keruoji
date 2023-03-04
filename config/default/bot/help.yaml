@@ -1,0 +1,25 @@
+- group: 公主链接查询指令
+  list:
+    - icon: 钻石
+      title: 十连 10连
+      desc: 真实模拟抽卡
+    - icon: paimon
+      title: '#刻晴 #刻晴卡片 #戳一戳'
+      desc: 你的原神角色数据
+    - icon: abyss
+      title: '#深渊 #深渊12层'
+      desc: 深渊数据，打完请2小时后查询
+    - icon: weapon
+      title: '#五星 #武器 #今日素材'
+      desc: 你的原神角色数据
+- group: 其他查询指令
+  list:
+    - icon: 原石
+      title: 抽卡记录 记录帮助
+      desc: 统计游戏抽卡数据
+    - icon: 星辉
+      title: 角色统计 武器统计
+      desc: 按卡池统计抽卡数据
+    - icon: excel
+      title: 导出记录、导入记录
+      desc: 导出导入xlsx、json抽卡记录

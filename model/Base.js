@@ -1,4 +1,4 @@
-export default class base {
+export default class Base {
   constructor (e = {}) {
     this.e = e
     this.userId = e?.user_id

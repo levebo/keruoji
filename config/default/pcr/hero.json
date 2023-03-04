@@ -1,0 +1,499 @@
+[
+  {
+    "id": 105211,
+    "japanName": "リマ",
+    "name": "莉玛",
+    "star": 1,
+    "uid": 1052
+  },
+  {
+    "id": 101031,
+    "japanName": "マホ",
+    "name": "真步",
+    "star": 3,
+    "uid": 1010
+  },
+  {
+    "id": 103311,
+    "japanName": "マヒル",
+    "name": "真阳",
+    "star": 2,
+    "uid": 1033
+  },
+  {
+    "id": 105631,
+    "japanName": "ルカ",
+    "name": "流夏",
+    "star": 3,
+    "uid": 1056
+  },
+  {
+    "id": 109431,
+    "japanName": "グレア",
+    "name": "古蕾娅",
+    "star": 3,
+    "uid": 1094
+  },
+  {
+    "id": 107131,
+    "japanName": "クリスティーナ",
+    "name": "克莉丝提娜",
+    "star": 3,
+    "uid": 1071
+  },
+  {
+    "id": 100311,
+    "japanName": "レイ",
+    "name": "怜",
+    "star": 1,
+    "uid": 1003
+  },
+  {
+    "id": 102611,
+    "japanName": "リン",
+    "name": "铃",
+    "star": 2,
+    "uid": 1026
+  },
+  {
+    "id": 104931,
+    "japanName": "シズル",
+    "name": "静流",
+    "star": 3,
+    "uid": 1049
+  },
+  {
+    "id": 100711,
+    "japanName": "ミヤコ",
+    "name": "宫子",
+    "star": 2,
+    "uid": 1007
+  },
+  {
+    "id": 106331,
+    "japanName": "アリサ",
+    "name": "亚里莎",
+    "star": 3,
+    "uid": 1063
+  },
+  {
+    "id": 110931,
+    "japanName": "チエル",
+    "name": "琪爱儿",
+    "star": 3,
+    "uid": 1109
+  },
+  {
+    "id": 104011,
+    "japanName": "アオイ",
+    "name": "碧",
+    "star": 1,
+    "uid": 1040
+  },
+  {
+    "id": 102111,
+    "japanName": "クルミ",
+    "name": "胡桃",
+    "star": 1,
+    "uid": 1021
+  },
+  {
+    "id": 104431,
+    "japanName": "イリヤ",
+    "name": "伊莉亚",
+    "star": 3,
+    "uid": 1044
+  },
+  {
+    "id": 101431,
+    "japanName": "カスミ",
+    "name": "霞",
+    "star": 3,
+    "uid": 1014
+  },
+  {
+    "id": 103731,
+    "japanName": "トモ",
+    "name": "智",
+    "star": 3,
+    "uid": 1037
+  },
+  {
+    "id": 101831,
+    "japanName": "イオ",
+    "name": "伊绪",
+    "star": 3,
+    "uid": 1018
+  },
+  {
+    "id": 105331,
+    "japanName": "モニカ",
+    "name": "莫妮卡",
+    "star": 3,
+    "uid": 1053
+  },
+  {
+    "id": 109931,
+    "japanName": "エミリア",
+    "name": "爱蜜莉雅",
+    "star": 3,
+    "uid": 1099
+  },
+  {
+    "id": 103031,
+    "japanName": "ニノン",
+    "name": "妮侬",
+    "star": 3,
+    "uid": 1030
+  },
+  {
+    "id": 101131,
+    "japanName": "リノ",
+    "name": "璃乃",
+    "star": 3,
+    "uid": 1011
+  },
+  {
+    "id": 105731,
+    "japanName": "ジータ",
+    "name": "吉塔",
+    "star": 3,
+    "uid": 1057
+  },
+  {
+    "id": 103411,
+    "japanName": "ユカリ",
+    "name": "由加莉",
+    "star": 1,
+    "uid": 1034
+  },
+  {
+    "id": 100411,
+    "japanName": "ミソギ",
+    "name": "未奏希",
+    "star": 1,
+    "uid": 1004
+  },
+  {
+    "id": 102711,
+    "japanName": "エリコ",
+    "name": "惠理子",
+    "star": 2,
+    "uid": 1027
+  },
+  {
+    "id": 100811,
+    "japanName": "ユキ",
+    "name": "雪",
+    "star": 2,
+    "uid": 1008
+  },
+  {
+    "id": 102211,
+    "japanName": "ヨリ",
+    "name": "日和莉",
+    "star": 2,
+    "uid": 1022
+  },
+  {
+    "id": 102211,
+    "japanName": "ヨリ",
+    "name": "依里",
+    "star": 1,
+    "uid": 1022
+  },
+  {
+    "id": 104511,
+    "japanName": "クウカ",
+    "name": "空花",
+    "star": 2,
+    "uid": 1045
+  },
+  {
+    "id": 101511,
+    "japanName": "ミサト",
+    "name": "美里",
+    "star": 2,
+    "uid": 1015
+  },
+  {
+    "id": 103811,
+    "japanName": "シオリ",
+    "name": "栞",
+    "star": 2,
+    "uid": 1038
+  },
+  {
+    "id": 103111,
+    "japanName": "シノブ",
+    "name": "忍",
+    "star": 2,
+    "uid": 1031
+  },
+  {
+    "id": 105011,
+    "japanName": "ミサキ",
+    "name": "美咲",
+    "star": 1,
+    "uid": 1050
+  },
+  {
+    "id": 101231,
+    "japanName": "ハツネ",
+    "name": "初音",
+    "star": 3,
+    "uid": 1012
+  },
+  {
+    "id": 105411,
+    "japanName": "ツムギ",
+    "name": "纺希",
+    "star": 2,
+    "uid": 1054
+  },
+  {
+    "id": 111431,
+    "japanName": "ルナ",
+    "name": "露娜",
+    "star": 3,
+    "uid": 1114
+  },
+  {
+    "id": 109231,
+    "japanName": "アン",
+    "name": "杏奈",
+    "star": 3,
+    "uid": 1092
+  },
+  {
+    "id": 109231,
+    "japanName": "アン",
+    "name": "安",
+    "star": 3,
+    "uid": 1092
+  },
+  {
+    "id": 100511,
+    "japanName": "マツリ",
+    "name": "茉莉",
+    "star": 2,
+    "uid": 1005
+  },
+  {
+    "id": 102831,
+    "japanName": "サレン",
+    "name": "咲恋",
+    "star": 3,
+    "uid": 1028
+  },
+  {
+    "id": 104731,
+    "japanName": "ジュン",
+    "name": "纯",
+    "star": 3,
+    "uid": 1047
+  },
+  {
+    "id": 100931,
+    "japanName": "アンナ",
+    "name": "杏奈",
+    "star": 3,
+    "uid": 1009
+  },
+  {
+    "id": 104211,
+    "japanName": "チカ",
+    "name": "千歌",
+    "star": 2,
+    "uid": 1042
+  },
+  {
+    "id": 106131,
+    "japanName": "ムイミ",
+    "name": "矛依未",
+    "star": 3,
+    "uid": 1061
+  },
+  {
+    "id": 104611,
+    "japanName": "タマキ",
+    "name": "珠希",
+    "star": 2,
+    "uid": 1046
+  },
+  {
+    "id": 102311,
+    "japanName": "アヤネ",
+    "name": "绫音",
+    "star": 2,
+    "uid": 1023
+  },
+  {
+    "id": 106531,
+    "japanName": "カヤ",
+    "name": "嘉夜",
+    "star": 3,
+    "uid": 1065
+  },
+  {
+    "id": 101611,
+    "japanName": "スズナ",
+    "name": "铃奈",
+    "star": 2,
+    "uid": 1016
+  },
+  {
+    "id": 111031,
+    "japanName": "ユニ",
+    "name": "优妮",
+    "star": 3,
+    "uid": 1110
+  },
+  {
+    "id": 105111,
+    "japanName": "ミツキ",
+    "name": "深月",
+    "star": 2,
+    "uid": 1051
+  },
+  {
+    "id": 103231,
+    "japanName": "アキノ",
+    "name": "秋乃",
+    "star": 3,
+    "uid": 1032
+  },
+  {
+    "id": 101311,
+    "japanName": "ナナカ",
+    "name": "七七香",
+    "star": 2,
+    "uid": 1013
+  },
+  {
+    "id": 105511,
+    "japanName": "アユミ",
+    "name": "步未",
+    "star": 1,
+    "uid": 1055
+  },
+  {
+    "id": 109731,
+    "japanName": "レム",
+    "name": "雷姆",
+    "star": 3,
+    "uid": 1097
+  },
+  {
+    "id": 107031,
+    "japanName": "ネネカ",
+    "name": "似似花",
+    "star": 3,
+    "uid": 1070
+  },
+  {
+    "id": 102511,
+    "japanName": "スズメ",
+    "name": "铃莓",
+    "star": 1,
+    "uid": 1025
+  },
+  {
+    "id": 100611,
+    "japanName": "アカリ",
+    "name": "茜里",
+    "star": 2,
+    "uid": 1006
+  },
+  {
+    "id": 104811,
+    "japanName": "ミフユ",
+    "name": "美冬",
+    "star": 2,
+    "uid": 1048
+  },
+  {
+    "id": 102931,
+    "japanName": "ノゾミ",
+    "name": "望",
+    "star": 3,
+    "uid": 1029
+  },
+  {
+    "id": 110831,
+    "japanName": "クロエ",
+    "name": "克萝依",
+    "star": 3,
+    "uid": 1108
+  },
+  {
+    "id": 102011,
+    "japanName": "ミミ",
+    "name": "美美",
+    "star": 2,
+    "uid": 1020
+  },
+  {
+    "id": 100111,
+    "japanName": "ヒヨリ",
+    "name": "日和莉",
+    "star": 1,
+    "uid": 1001
+  },
+  {
+    "id": 104331,
+    "japanName": "マコト",
+    "name": "真琴",
+    "star": 3,
+    "uid": 1043
+  },
+  {
+    "id": 106631,
+    "japanName": "イノリ",
+    "name": "祈梨",
+    "star": 3,
+    "uid": 1066
+  },
+  {
+    "id": 103631,
+    "japanName": "キョウカ",
+    "name": "镜华",
+    "star": 3,
+    "uid": 1036
+  },
+  {
+    "id": 101711,
+    "japanName": "カオリ",
+    "name": "香织",
+    "star": 2,
+    "uid": 1017
+  },
+  {
+    "id": 113431,
+    "japanName": "ハツネ（サマー）",
+    "name": "初音（泳装）",
+    "star": 3,
+    "uid": 1134
+  },
+  {
+    "id": 107531,
+    "japanName": "ペコリーヌ（サマー）",
+    "name": "佩可莉姆（泳装）",
+    "star": 3,
+    "uid": 1075
+  },
+  {
+    "id": 110331,
+    "japanName": "サレン（サマー）",
+    "name": "咲恋（泳装）",
+    "star": 3,
+    "uid": 1103
+  },
+  {
+    "id": 110031,
+    "japanName": "スズナ（サマー）",
+    "name": "铃奈（泳装）",
+    "star": 3,
+    "uid": 1100
+  }
+]

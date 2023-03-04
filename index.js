@@ -5,7 +5,6 @@ const files = fs.readdirSync('./plugins/keruoji/apps').filter(file => file.endsW
 
 let ret = []
 logger.info(chalk.rgb(153, 255, 165)('可萝仔初始化中.......'))
-logger.info(chalk.rgb(153, 255, 165)('-----------------------------'))
 
 files.forEach((file) => {
   ret.push(import(`./apps/${file}`))
