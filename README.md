@@ -15,7 +15,7 @@
 
  -- 使用Gitee安装
 ```
-git clone https://gitee.com/levebo/keruoji.git  ./plugins/hs-qiqi-plugin
+git clone https://gitee.com/levebo/keruoji.git  ./plugins/keruoji
 ```
 #### 使用说明
 
