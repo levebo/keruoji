@@ -1,5 +1,5 @@
 <div style="text-align: center;">
-  <img src="resources/img/readme/icon1.jpg" alt="可萝仔" width = "600">
+
 <h1>keruoji</h1>
 
 
