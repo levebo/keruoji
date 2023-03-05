@@ -45,7 +45,7 @@ export class acg extends plugin {
       this.e.reply('请正确发送需要查找的图片')
       return false
     }
-    // let acg = new Acg()
-    // this.reply(acg.saucenao())
+    let acg = new Acg()
+    this.reply(await acg.saucenao(this.e.img))
   }
 }

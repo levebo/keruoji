@@ -49,10 +49,10 @@ body {
 }
 .head_box .keruoji_logo {
   position: absolute;
-  top: 5px;
+  top: 10px;
   right: 15px;
-  width: 85px;
-  height: 85px;
+  width: 75px;
+  height: 75px;
   object-fit: contain;
 }
 .base_info {
