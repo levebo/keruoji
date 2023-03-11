@@ -17,5 +17,5 @@
 - group: 王之逆袭查询指令
   list:
     - icon: kr
-      title: kr+英雄名称
-      desc: 施工中...
+      title: kr+英雄名称 or 英雄别名
+      desc: 王之逆袭角色信息查询
