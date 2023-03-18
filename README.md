@@ -13,11 +13,16 @@
 本插件只适配了 Yunzai-Bot v3 安装前请确认版本
 将keruoji下载下来放在Yunzai-Bot/plugins目录下，重启Yunzai-Bot后可正常使用。
 
- -- 使用Gitee安装
+-- 使用Gitee安装
 ```
 git clone https://gitee.com/levebo/keruoji.git  ./plugins/keruoji
 ```
 #### 使用说明
+所有功能都需要资源文件，以支持角色信息和立绘信息展示等功能
+* 下载地址
+```
+https://pan.baidu.com/s/1GIIM0dAVzVdXXmmLX_6O7Q?pwd=d8jp
+```
 
 <details>
   <summary>公主链接</summary>
@@ -29,7 +34,9 @@ git clone https://gitee.com/levebo/keruoji.git  ./plugins/keruoji
 </details>
 <details>
   <summary>王之逆袭</summary>
-- 迁移中... 个人情怀向 提供角色技能和信息查看
+    - 角色信息展示 指令：！kr 角色名称 | kr 角色称号 <br>
+    - 角色立绘 指令：！kr 角色名称+立绘  <br>
+    - 角色列表/职业列表 指令： ！kr 职业列表 | kr 职业名称+列表
 </details>
 
 ## 免责声明
