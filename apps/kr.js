@@ -26,16 +26,33 @@ export class kr extends plugin {
       priority: 500,
       rule: [
         {
-          reg: '^(!kr|！kr|kr|可萝仔)',
+          reg: '^(!kr|！kr|kr|可萝仔)(?!.*(?:图像|立绘|列表))',
           fnc: 'getInfoByName'
+        },
+        {
+          reg: '^(!kr|！kr|kr|可萝仔)(.*)(立绘|图像)$',
+          fnc: 'getLie'
+        },
+        {
+          reg: '^(!kr|！kr|kr|可萝仔)(?!.*(?:职业列表))(.*)(列表)$',
+          fnc: 'getNameList'
+        },
+        {
+          reg: '^(!kr|！kr|kr|可萝仔)(.*)(职业列表)$',
+          fnc: 'getClassesList'
         }
       ]
     })
   }
 
+  /**
+   * 通过名称获取 英雄信息
+   * @returns {Promise<void>}
+   */
   async getInfoByName () {
     let krObj = new Kr(this.e)
-    let data = await krObj.getInfo(this.e.msg)
+    let name = this.e.msg.replace('kr', '').trim()
+    let data = await krObj.getInfo(name)
     if (data) {
       let img = await this.cache(data)
       this.reply(img)
@@ -44,9 +61,41 @@ export class kr extends plugin {
     }
   }
 
+  /**
+   * 获取 角色立绘
+   * @returns {Promise<void>}
+   */
+  async getLie () {
+    let krObj = new Kr(this.e)
+    let name = this.e.msg.replace('kr', '').trim()
+    let img = await krObj.getLie(name.replace('立绘', '').trim())
+    this.reply(img)
+  }
+
+  /**
+   * 通过职业获取角色名字
+   * @returns {Promise<void>}
+   */
+  async getNameList () {
+    let krObj = new Kr(this.e)
+    let name = this.e.msg.replace('kr', '').trim()
+    let names = await krObj.getNameList(name)
+    this.reply(names)
+  }
+
+  /**
+   * 获取职业列表
+   * @returns {Promise<void>}
+   */
+  async getClassesList () {
+    let krObj = new Kr(this.e)
+    let classesList = await krObj.getClassesList()
+    this.reply(classesList)
+  }
+
   async cache (data) {
     let tmp = md5(JSON.stringify(data))
-    if (krData.md5 == tmp) return krData.img
+    if (krData.md5 === tmp) return krData.img
     krData.img = await puppeteer.screenshot('kr', data)
     krData.md5 = tmp
     return krData.img

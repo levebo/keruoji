@@ -682,7 +682,15 @@
       "name": "锯齿爪萨提特",
       "imgPath": "uw14.png"
     },
-    "ut": []
+    "ut": [],
+    "info": {
+      "basicInfo": {
+      },
+      "basicStats": {
+      },
+      "addOptions": {
+      }
+    }
   },
   {
     "id": 15,
@@ -5241,6 +5249,58 @@
         "m_block": 500,
         "m_block_def": 250,
         "m_tough": 150,
+        "atk_spd": 1000
+      }
+    }
+  },
+  {
+    "id": 103,
+    "name": "巴兰赛",
+    "alias": "魔导工学的智慧",
+    "uw": {
+      "name": "马寇列弗莱姆的精华－克洛博罗洁",
+      "imgPath": "uw103.png"
+    },
+    "sw": {},
+    "ut": [
+      {
+        "id": 1,
+        "name": "公式输入装置",
+        "imgPath": "ut103_1.png"
+      },
+      {
+        "id": 2,
+        "name": "短暂的悠闲",
+        "imgPath": "ut103_2.png"
+      },
+      {
+        "id": 3,
+        "name": "粗浅的诚意",
+        "imgPath": "ut103_3.png"
+      },
+      {
+        "id": 4,
+        "name": "首个失败之作",
+        "imgPath": "ut103_4.png"
+      }
+    ],
+    "info": {
+      "basicInfo": {
+        "classes": "机械工",
+        "atkType": "物理属性",
+        "position": "中央"
+      },
+      "basicStats": {
+        "max_hp": 1157176,
+        "atk": 25416,
+        "p_def": 5376,
+        "m_def": 4392
+      },
+      "addOptions": {
+        "crit": 150,
+        "crit_dmg": 50,
+        "penetration": 100,
+        "acc": 200,
         "atk_spd": 1000
       }
     }
