@@ -17,6 +17,10 @@
 ```
 git clone https://gitee.com/levebo/keruoji.git  ./plugins/keruoji
 ```
+-- 使用Git安装
+```
+git clone https://github.com/levebo/keruoji.git  ./plugins/keruoji
+```
 #### 使用说明
 所有功能都需要资源文件，以支持角色信息和立绘信息展示等功能
 * 下载地址
