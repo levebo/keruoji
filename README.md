@@ -36,6 +36,3 @@ git clone https://gitee.com/levebo/keruoji.git  ./plugins/keruoji
 
 1. 功能仅限内部交流与小范围使用，请勿将Yunzai-Bot及keruoji用于任何以盈利为目的的场景.
 2. 图片与其他素材均来自于网络，仅供交流学习使用，如有侵权可以联系会立即删除.
-
-## 其他
-* Yunzai-Bot 项目地址：[Github](https://github.com/Le-niao/Yunzai-Bot)

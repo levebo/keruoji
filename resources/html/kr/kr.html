@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html;charset=utf-8"/>
+    <link rel="shortcut icon" href="#"/>
+    <link rel="stylesheet" type="text/css" href="{{pluResPath}}html/kr/kr.css"/>
+    <link rel="preload" href="{{resPath}}font/tttgbnumber.ttf" as="font">
+</head>
+<body>
+<div class="container" id="container" style="background-image: url('{{pluResPath}}img/kr/common/{{ other.bg }}')">
+    <img class="hero-img" src="{{pluResPath}}img/kr/hero/lie/{{ hero.id }}.png">
+    <div class="top">
+        <div class="info">
+            <div class="title">英雄信息</div>
+            <div class="info-name">
+                <img src="{{pluResPath}}img/kr/hero/icon/{{ hero.id }}.png">
+                <div>
+                    <div class="name">{{ hero.name }}</div>
+                    <div class="alias">{{ hero.alias }}</div>
+                </div>
+            </div>
+            <div class="info-item">
+                <div class="span-left">职业信息</div>
+                <div class="span-right">{{ hero.info.basicInfo.classes }}</div>
+            </div>
+            <div class="info-item">
+                <div class="span-left">攻击属性</div>
+                <div class="span-right">
+                    {{if hero.info.basicInfo.atkType === '物理属性'}}
+                    <img src="{{pluResPath}}img/kr/common/img_physical.png">
+                    {{/if}}
+                    {{if hero.info.basicInfo.atkType === '魔法属性'}}
+                    <img src="{{pluResPath}}img/kr/common/img_magical.png">
+                    {{/if}}
+                    {{hero.info.basicInfo.atkType}}
+                </div>
+            </div>
+            <div class="info-item">
+                <div class="span-left">战斗位置</div>
+                <div class="span-right">{{hero.info.basicInfo.position}}</div>
+            </div>
+        </div>
+    </div>
+    <div class="uw">
+        <div class="tips">专属武器</div>
+        <div class="item">
+            <div class="uw-img-div">
+                <img class="uw-img" src="{{pluResPath}}img/kr/uw/{{hero.uw.imgPath}}">
+                <img class="uw-img-frame" src="{{pluResPath}}img/kr/common/uw_frame.png">
+                <img class="uw-img-t10" src="{{pluResPath}}img/kr/common/t10.png">
+            </div>
+            <div class="text-div">
+                <div class="uw-name">{{hero.uw.name}}</div>
+                <div class="uw-name" style="font-size: 20px;color: #dcd1ae;">基础攻击力：{{other.uw}}</div>
+            </div>
+        </div>
+    </div>
+    <div class="ut">
+        <div class="tips">专属宝物</div>
+        <div class="ut-content">
+            {{each hero.ut}}
+            <div class="item">
+                <div class="uw-img-div">
+                    <img class="uw-img" src="{{pluResPath}}img/kr/ut/{{$value.imgPath}}">
+                    <img class="uw-img-frame" src="{{pluResPath}}img/kr/common/uw_frame.png">
+                    <img class="uw-img-t10" src="{{pluResPath}}img/kr/common/t10.png">
+                </div>
+                <div class="text-div">
+                    <div class="uw-name">{{$value.name}}【技能{{$value.id}}】</div>
+                    <div class="uw-name" style="font-size: 20px;color: #dcd1ae;">基础血量：{{other.ut}}</div>
+                </div>
+            </div>
+            {{/each}}
+        </div>
+    </div>
+    <div class="content">
+        <div class="content-item" style="margin-right: 20px;">
+            <div class="tips">基本信息</div>
+            <div class="item">
+                <div class="span-left">生命值上限</div>
+                <div class="span-right">{{hero.info.basicStats.max_hp}}</div>
+            </div>
+            <div class="item">
+                <div class="span-left">攻击</div>
+                <div class="span-right">{{hero.info.basicStats.atk}}</div>
+            </div>
+            <div class="item">
+                <div class="span-left">物理防御</div>
+                <div class="span-right">{{hero.info.basicStats.p_def}}</div>
+            </div>
+            <div class="item">
+                <div class="span-left">魔法防御</div>
+                <div class="span-right">{{hero.info.basicStats.m_def}}</div>
+            </div>
+        </div>
+        <div class="content-item">
+            <div class="tips">附加属性</div>
+            {{if hero.info.addOptions.crit }}
+            <div class="item">
+                <div class="span-left">暴击率</div>
+                <div class="span-right"><div style="width: 65px;">{{hero.info.addOptions.crit}}</div><div style="margin: 0 20px">|</div>{{hero.info.addOptions.crit | percent}}</div>
+            </div>
+            {{/if}}
+            {{if hero.info.addOptions.crit_dmg }}
+            <div class="item">
+                <div class="span-left">暴击伤害</div>
+                <div class="span-right">{{hero.info.addOptions.crit_dmg}}%</div>
+            </div>
+            {{/if}}
+            {{if hero.info.addOptions.penetration }}
+            <div class="item">
+                <div class="span-left">防御穿透力</div>
+                <div class="span-right"><div style="width: 65px;">{{hero.info.addOptions.penetration}}</div><div style="margin: 0 20px">|</div>{{hero.info.addOptions.penetration | percent}}</div>
+            </div>
+            {{/if}}
+            {{if hero.info.addOptions.acc }}
+            <div class="item">
+                <div class="span-left">命中率</div>
+                <div class="span-right"><div style="width: 65px;">{{hero.info.addOptions.acc}}</div><div style="margin: 0 20px">|</div>{{hero.info.addOptions.acc | percent}}</div>
+            </div>
+            {{/if}}
+            {{if hero.info.addOptions.p_dodge }}
+            <div class="item">
+                <div class="span-left">物理闪避率</div>
+                <div class="span-right"><div style="width: 65px;">{{hero.info.addOptions.p_dodge}}</div><div style="margin: 0 20px">|</div>{{hero.info.addOptions.p_dodge | percent}}</div>
+            </div>
+            {{/if}}
+            {{if hero.info.addOptions.m_dodge }}
+            <div class="item">
+                <div class="span-left">魔法闪避率</div>
+                <div class="span-right"><div style="width: 65px;">{{hero.info.addOptions.m_dodge}}</div><div style="margin: 0 20px">|</div>{{hero.info.addOptions.m_dodge | percent}}</div>
+            </div>
+            {{/if}}
+            {{if hero.info.addOptions.p_block }}
+            <div class="item">
+                <div class="span-left">物理格挡率</div>
+                <div class="span-right"><div style="width: 65px;">{{hero.info.addOptions.p_block}}</div><div style="margin: 0 20px">|</div>{{hero.info.addOptions.p_block | percent}}</div>
+            </div>
+            {{/if}}
+            {{if hero.info.addOptions.m_block }}
+            <div class="item">
+                <div class="span-left">魔法格挡率</div>
+                <div class="span-right"><div style="width: 65px;">{{hero.info.addOptions.m_block}}</div><div style="margin: 0 20px">|</div>{{hero.info.addOptions.m_block | percent}}</div>
+            </div>
+            {{/if}}
+            {{if hero.info.addOptions.p_block_def }}
+            <div class="item">
+                <div class="span-left">物理格挡防御</div>
+                <div class="span-right"><div style="width: 65px;">{{hero.info.addOptions.p_block_def}}</div><div style="margin: 0 20px">|</div>{{hero.info.addOptions.p_block_def | percent}}</div>
+            </div>
+            {{/if}}
+            {{if hero.info.addOptions.m_block_def }}
+            <div class="item">
+                <div class="span-left">魔法格挡防御</div>
+                <div class="span-right"><div style="width: 65px;">{{hero.info.addOptions.m_block_def}}</div><div style="margin: 0 20px">|</div>{{hero.info.addOptions.m_block_def | percent}}</div>
+            </div>
+            {{/if}}
+            {{if hero.info.addOptions.p_tough }}
+            <div class="item">
+                <div class="span-left">物理抵抗</div>
+                <div class="span-right"><div style="width: 65px;">{{hero.info.addOptions.p_tough}}</div><div style="margin: 0 20px">|</div>{{hero.info.addOptions.p_tough | percent}}</div>
+            </div>
+            {{/if}}
+            {{if hero.info.addOptions.m_tough }}
+            <div class="item">
+                <div class="span-left">魔法抵抗</div>
+                <div class="span-right"><div style="width: 65px;">{{hero.info.addOptions.m_tough}}</div><div style="margin: 0 20px">|</div>{{hero.info.addOptions.m_tough | percent}}</div>
+            </div>
+            {{/if}}
+            {{if hero.info.addOptions.recovery }}
+            <div class="item">
+                <div class="span-left">回复</div>
+                <div class="span-right"><div style="width: 65px;">{{hero.info.addOptions.recovery}}</div><div style="margin: 0 20px">|</div>{{hero.info.addOptions.recovery | percent}}</div>
+            </div>
+            {{/if}}
+            {{if hero.info.addOptions.cc_resist }}
+            <div class="item">
+                <div class="span-left">异常抵抗</div>
+                <div class="span-right"><div style="width: 65px;">{{hero.info.addOptions.cc_resist}}</div><div style="margin: 0 20px">|</div>{{hero.info.addOptions.cc_resist | percent}}</div>
+            </div>
+            {{/if}}
+            {{if hero.info.addOptions.debuff_acc }}
+            <div class="item">
+                <div class="span-left">状态异常命中率</div>
+                <div class="span-right"><div style="width: 65px;">{{hero.info.addOptions.debuff_acc}}</div><div style="margin: 0 20px">|</div>{{hero.info.addOptions.debuff_acc | percent}}</div>
+            </div>
+            {{/if}}
+            {{if hero.info.addOptions.lifesteal }}
+            <div class="item">
+                <div class="span-left">生命吸取</div>
+                <div class="span-right"><div style="width: 65px;">{{hero.info.addOptions.lifesteal}}</div><div style="margin: 0 20px">|</div>{{hero.info.addOptions.lifesteal | percent}}</div>
+            </div>
+            {{/if}}
+            {{if hero.info.addOptions.atk_spd }}
+            <div class="item">
+                <div class="span-left">攻击速度</div>
+                <div class="span-right"><div style="width: 65px;">{{hero.info.addOptions.atk_spd}}</div><div style="margin: 0 20px">|</div>{{hero.info.addOptions.atk_spd | percent}}</div>
+            </div>
+            {{/if}}
+            {{if hero.info.addOptions.mp_recovery_attack }}
+            <div class="item">
+                <div class="span-left">攻击时魔力回复量</div>
+                <div class="span-right"><div style="width: 65px;">{{hero.info.addOptions.mp_recovery_attack}}</div><div style="margin: 0 20px">|</div>{{hero.info.addOptions.mp_recovery_attack | percent}}</div>
+            </div>
+            {{/if}}
+            {{if hero.info.addOptions.p_crit_resistance }}
+            <div class="item">
+                <div class="span-left">物理爆击抵抗</div>
+                <div class="span-right"><div style="width: 65px;">{{hero.info.addOptions.p_crit_resistance}}</div><div style="margin: 0 20px">|</div>{{hero.info.addOptions.p_crit_resistance | percent}}</div>
+            </div>
+            {{/if}}
+            {{if hero.info.addOptions.m_crit_resistance }}
+            <div class="item">
+                <div class="span-left">魔法爆击抵抗</div>
+                <div class="span-right"><div style="width: 65px;">{{hero.info.addOptions.m_crit_resistance}}</div><div style="margin: 0 20px">|</div>{{hero.info.addOptions.m_crit_resistance | percent}}</div>
+            </div>
+            {{/if}}
+        </div>
+    </div>
+    <div class="by">BY keruoji v{{version}}</div>
+</div>
+</body>
+</html>
+
