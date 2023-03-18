@@ -25,7 +25,7 @@ git clone https://github.com/levebo/keruoji.git  ./plugins/keruoji
 所有功能都需要资源文件，以支持角色信息和立绘信息展示等功能
 * 下载地址
 ```
-https://pan.baidu.com/s/1GIIM0dAVzVdXXmmLX_6O7Q?pwd=d8jp
+https://pan.baidu.com/s/1kPdC1N3zls2uuGF6OsnGIA?pwd=1xb9
 ```
 
 <details>
